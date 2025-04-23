@@ -1,0 +1,276 @@
+/** Globales **/
+:root {
+    --primario: #FFC107;
+    --secundario: #018C9F;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Krub', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(to top, #DDDDDD, #FFFFFF);
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3,
+a {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.button {
+    color: var(--blanco);
+    font-weight: bold;
+    border: none;
+    background-color: var(--secundario);
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+/** Header **/
+header h1 span {
+    font-size: 2rem;
+}
+
+/** Nav **/
+.nav-container {
+    background-color: var(--secundario);
+}
+
+nav {
+    margin: auto;
+    display: flex;
+    max-width: 120rem;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+nav a:hover {
+    background-color: var(--primario);
+    color: var(--negro);
+}
+
+/** Image **/
+.image {
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    color: var(--blanco);
+    margin-bottom: 2rem;
+}
+
+.image-background {
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.location {
+    display: flex;
+    align-items: flex-end;
+}
+
+.image .button {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .image .button {
+        width: 90%;
+    }
+}
+
+/** Main **/
+main {
+    max-width: 130rem;
+    padding: 3rem;
+    margin: auto;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.services p {
+    line-height: 2;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services h3 {
+    color: var(--secundario);
+    font-weight: 400;
+}
+
+.service > .icon {
+    background-color: var(--primario);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+}
+
+/** Contact **/
+.contact form {
+    text-align: left;
+    max-width: 60rem;
+    margin: auto;
+    padding: 1.5rem;
+    background-color: gray;
+    font-weight: bold;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.contact fieldset,
+.contact input {
+    border: none;
+}
+
+.contact legend {
+    color: var(--primario);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .fields {
+        grid-template-columns: 1fr;
+    }
+}
+
+.fields label {
+    color: var(--blanco);
+    display: inline-block;
+    margin-bottom: .3rem;
+}
+
+.fields input,
+.fields textarea {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-radius: .6rem;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
+}
+
+.fields textarea {
+    height: 20rem;
+}
+
+@media (min-width: 768px) {
+    .field:nth-child(3) {
+        grid-column: 1 / span 2;
+    }
+    
+    .field:last-child {
+        grid-column: 1 / span 2;
+    }
+}
+
+.align-button {
+    display: flex;
+    justify-content: end;
+}
+
+.align-button .button {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .align-button .button {
+        width: 100%;
+    }
+}
+
+form button {
+    cursor: pointer;
+}
+
+/** Footer **/
+footer {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
