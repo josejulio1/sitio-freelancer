@@ -6,7 +6,7 @@
 ## 📌 Descripción
 
 Landing page orientada a promoción de freelancer.
-Se trata de un sitio estático (sin funcionalidades dinámicas) enfocado en practicar **maquetación**, **estructura semántica** y **diseño visual responsivo**.
+Se trata de un sitio estático (sin funcionalidades dinámicas) enfocado en practicar **maquetación**, **estructura semántica** y **diseño visual responsivo**
 
 ---
 
@@ -18,8 +18,8 @@ Se trata de un sitio estático (sin funcionalidades dinámicas) enfocado en prac
 ---
 
 ## 🔁 Conocimientos reforzados
-- Estructura semántica con HTML5.
-- Maquetación responsiva con Flexbox y Grid.
+- Estructura semántica con HTML5
+- Maquetación responsiva con Flexbox y Grid
 
 ---
 
